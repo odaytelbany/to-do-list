@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #191919;
+}
+p{
+    color: #dc2a0b;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.container {
+    min-width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+@media (min-width: 991px) {
+    .container {
+        width: 60%;
+    }
+}
+
+.container .form {
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.container .form .input {
+    height: 40px;
+    flex-basis: 70%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #191919;
+}
+
+.container .form .add {
+    background-color: #ff5333;
+    color: white;
+    height: 40px;
+    flex-basis: 15%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container .form .clear {
+    background-color: #ff5333;
+    color: white;
+    height: 40px;
+    flex-basis: 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container .tasks {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.container .tasks .task {
+    list-style-type: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #191919;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.container .tasks .task span {
+    background-color: #ff5333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 5px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tasks .task:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.tasks .task.done {
+    opacity: 0.3;
+}
